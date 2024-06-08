@@ -15,11 +15,17 @@ body {
 
 .homepage header {
     height: 10%;
-
+    display: flex;
+    justify-content: center;
 }
 
-.homepage #accountLogin {
+.homepage header img {
+    height: 100%;
+    width: auto;
+}
+
+.homepage #accountInfo {
     height: 50%;
     width: 100%;
-    background: white;
+    background: black;
 }
