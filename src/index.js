@@ -1,5 +1,6 @@
 import createProjectList from "./createProjectList";
 import displayProjectList from "./displayProjectList";
+import './styles.css';
 
 console.log("hi");
 
