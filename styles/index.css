@@ -8,6 +8,7 @@ body {
 }
 
 .homepage {
+
     height: 100%;
     width: 100%;
     background: black;
@@ -24,8 +25,80 @@ body {
     width: auto;
 }
 
-.homepage #accountInfo {
+.homepage #projectTab {
     height: 50%;
-    width: 100%;
+    max-width: 100%;
     background: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#projectWin{
+    width: 80%;
+    height: 80%;
+    background: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* border: 3px solid rgba(218, 165, 32, 0.5); */
+    overflow: hidden;
+    /* box-shadow: 0px 0px 10px rgba(218, 165, 32, 0.5); */
+}
+
+#projectWin:hover {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+@keyframes colorChangeProjCard {
+    0% {
+      background-color: rgba(218, 165, 32, 1); /* Initial color */
+    }
+    100% {
+      background-color: rgba(218, 165, 32, 0.5); /* Final color */
+    }
+  }
+
+  @keyframes projCardScaling {
+    0% {
+        
+    }
+    100% {
+        height: 90%;
+    }
+  }
+
+
+.projectCard {
+    height: 75%;
+    width: 30%;
+    background: goldenrod;
+    margin: 1%;
+    animation: colorChangeProjCard 1s forwards;
+}
+
+.projectCard:hover {
+    animation: projCardScaling 1s forwards;
+}
+
+.homepage footer {
+    height: 40%;
+}
+
+#siteDesc {
+    height: 60%;
+    color: rgba(218, 165, 32, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#siteDesc para {
+    width: 80%;
+}
+
+#siteFooter {
+    height: 40%;
 }
