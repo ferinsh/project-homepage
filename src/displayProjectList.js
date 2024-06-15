@@ -9,7 +9,9 @@ export default function displayProjectList(projList){
         // console.log(projectCardNew);
         projectCardHolder.classList.add("projectCard");
         // console.log(projectCardNew);
-        
+        projectCardHolder.addEventListener('click', () => {
+            window.open(projList[i].link, '_blank');
+        })      
 
         // console.log(projectCardNew);
         // console.log(typeof(projectCardNew));
