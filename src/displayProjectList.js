@@ -10,8 +10,13 @@ export default function displayProjectList(projList){
         projectCardHolder.classList.add("projectCard");
         // console.log(projectCardNew);
         projectCardHolder.addEventListener('click', () => {
-            window.open(projList[i].link, '_blank');
-        })      
+            window.open(projList[i].link, "");
+        })
+        projectCardHolder.addEventListener('contextmenu', function(event) {
+            event.preventDefault(); // Prevent default context menu
+            window.location.href = projList[i].link; // Navigate to the URL from projList[i].link
+            return false; // Ensure propagation is stopped
+        });
 
         // console.log(projectCardNew);
         // console.log(typeof(projectCardNew));
