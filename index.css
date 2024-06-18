@@ -81,6 +81,7 @@ body {
 
 .projectCard:hover {
     animation: projCardScaling 1s forwards;
+    cursor: pointer;
 }
 
 .homepage footer {
@@ -101,4 +102,10 @@ body {
 
 #siteFooter {
     height: 40%;
+}
+
+@media (max-width: 700px) {
+    .homepage {
+        background: white;
+    }
 }
