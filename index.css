@@ -56,6 +56,9 @@ body {
     0% {
       background-color: rgba(218, 165, 32, 1); /* Initial color */
     }
+    50% {
+        background-color: rgba(218, 165, 32, 0.75);
+    }
     100% {
       background-color: rgba(218, 165, 32, 0.5); /* Final color */
     }
@@ -91,13 +94,13 @@ body {
     align-items: center;
 }
 
+.projectCard:hover {
+    animation: colorChangeProjCard 1s reverse;
+}
+
 .projectCard:hover img{
     animation: projCardImgScale 1s forwards;
     cursor: pointer;
-}
-
-.projectCard:hover {
-    animation: colorChangeProjCard 1s forwards;
 }
 
 .projectCard img{
@@ -111,7 +114,7 @@ body {
 
 #siteDesc {
     height: 60%;
-    color: rgba(218, 165, 32, 0.5);
+    color: rgba(218, 165, 32, 1);
     display: flex;
     justify-content: center;
     align-items: center;
