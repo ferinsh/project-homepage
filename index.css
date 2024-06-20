@@ -59,16 +59,25 @@ body {
     100% {
       background-color: rgba(218, 165, 32, 0.5); /* Final color */
     }
-  }
+}
 
-  @keyframes projCardScaling {
+/* @keyframes projCardScaling {
     0% {
-        
+
     }
     100% {
         height: 90%;
     }
-  }
+} */
+
+@keyframes projCardImgScale {
+    0% {
+
+    }
+    100% {
+        height: 75%;
+    }
+}
 
 
 .projectCard {
@@ -77,11 +86,23 @@ body {
     background: goldenrod;
     margin: 1%;
     animation: colorChangeProjCard 1s forwards;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projectCard:hover img{
+    animation: projCardImgScale 1s forwards;
+    cursor: pointer;
 }
 
 .projectCard:hover {
-    animation: projCardScaling 1s forwards;
-    cursor: pointer;
+    animation: colorChangeProjCard 1s forwards;
+}
+
+.projectCard img{
+    height: 50%;
+    object-fit: contain;
 }
 
 .homepage footer {
@@ -104,8 +125,22 @@ body {
     height: 40%;
 }
 
-@media (max-width: 700px) {
-    .homepage {
+
+@media (max-width: 768px) {
+    .homepage header {
+        height: 15%;
         background: white;
+    }
+
+    .projectCard {
+        width: 45%;
+    }
+
+    #siteDesc {
+        height: 80%;
+    }
+
+    #siteDesc para {
+        width: 90%;
     }
 }
