@@ -6,9 +6,9 @@ export default function displayProjectList(projList){
     projectWin.innerHTML = '';
     for(let i = 0; i < projList.length; i++){
         let projectCardHolder = document.createElement("div");
-        // console.log(projectCardNew);
+        
         projectCardHolder.classList.add("projectCard");
-        // console.log(projectCardNew);
+        
         projectCardHolder.addEventListener('click', () => {
             window.open(projList[i].link, "");
         })
@@ -17,18 +17,16 @@ export default function displayProjectList(projList){
             window.location.href = projList[i].link; // Navigate to the URL from projList[i].link
             return false; // Ensure propagation is stopped
         });
+        
+        let projLogo = document.createElement("img");
+        projLogo.src = `${projList[i].img}`;
 
-        // console.log(projectCardNew);
-        // console.log(typeof(projectCardNew));
+        projectCardHolder.appendChild(projLogo);
+        
+        
         projectWin.appendChild(projectCardHolder);
     }
     console.log(projList);
     console.log(projList.length)
 }
 
-// function appendProjCard(projWin, projCard){
-//     projWin.appendChild(projCard);
-//     console.log(projWin);
-//     console.log(projCard);
-    
-// }

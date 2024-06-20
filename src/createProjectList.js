@@ -14,6 +14,7 @@ export default function createProjectList(projectArr){
         p1.changeName([projectArr.names[i]]);
         // p1.readName();
         // console.log(typeof(p1.link));
+        p1.changeImgURL([projectArr.img[i]]);
         projectList.push(p1);
     }
     return projectList;

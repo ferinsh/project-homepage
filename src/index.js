@@ -10,11 +10,17 @@ document.addEventListener("DOMContentLoaded", ()=> {
         "https://ferinsh.github.io/project-weather-app/",
         "https://youtube.com",
         "https://google.com",
-        "https://github.com",
+        "https://github.com/ferinsh",
         "https://instagram.com",
     ];
     let arrProjectNames = ["Weather App", "Youtube", "Google", "Github", "Instagram"];
-    let arrProjImgSrc = [];
+    let arrProjImgSrc = [
+        "./images/weatherapp_logo.png",
+        "./images/youtube_logo.png",
+        "./images/google_logo.png",
+        "./images/github_logo.png",
+        "./images/instagram_logo.png",
+    ];
     let arrProject = {
         links : arrProjectLinks,
         names : arrProjectNames,
@@ -26,6 +32,7 @@ document.addEventListener("DOMContentLoaded", ()=> {
     
     displayProjectList(projectList);
     // console.log(projectList[0].link);
+    console.log(projectList[1].img);
 
 })
 

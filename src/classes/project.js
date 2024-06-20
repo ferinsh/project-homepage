@@ -3,6 +3,7 @@ export default class project{
         //console.log("project object created");
         this.link = "link";
         this.name = "name";
+        this.img = "imgURL";
     }
     
     readLink() {
@@ -13,6 +14,10 @@ export default class project{
         console.log(this.name);
     }
 
+    readImgURL() {
+        console.log(this.img);
+    }
+
     changeLink(link){
         this.link = String(link);
     }
@@ -20,4 +25,9 @@ export default class project{
     changeName(name){
         this.name = String(name);
     }
+
+    changeImgURL(link){
+        this.img = String(link);
+    }
+
 }
