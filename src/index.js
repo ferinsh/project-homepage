@@ -2,10 +2,10 @@ import createProjectList from "./createProjectList";
 import displayProjectList from "./displayProjectList";
 import '../dist/index.css';
 
-console.log("hi");
+// console.log("hi");
 
 document.addEventListener("DOMContentLoaded", ()=> {
-    console.log("DOMContentLoaded");
+    // console.log("DOMContentLoaded");
     let arrProjectLinks = [
         "https://ferinsh.github.io/project-weather-app/",
         "https://youtube.com",
@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", ()=> {
     
     displayProjectList(projectList);
     // console.log(projectList[0].link);
-    console.log(projectList[1].img);
+    // console.log(projectList[1].img);
 
 })
 
