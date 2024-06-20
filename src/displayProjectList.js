@@ -30,6 +30,7 @@ export default function displayProjectList(projList){
 
         // projectCardHolder.appendChild(projLogo);
 
+        // uses async to load project images
         let projLogo = new Image();
         projLogo.onload = function() {
             projectCardHolder.appendChild(projLogo);
