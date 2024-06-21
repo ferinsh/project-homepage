@@ -12,14 +12,16 @@ document.addEventListener("DOMContentLoaded", ()=> {
         "https://google.com",
         "https://github.com/ferinsh",
         "https://instagram.com",
+        "https://ferinsh.github.io/tictactoe/",
     ];
-    let arrProjectNames = ["Weather App", "Youtube", "Google", "Github", "Instagram"];
+    let arrProjectNames = ["Weather App", "Youtube", "Google", "Github", "Instagram", "Tic Tac Toe"];
     let arrProjImgSrc = [
         "./images/weatherapp_logo.png",
         "./images/youtube_logo.png",
         "./images/google_logo.png",
         "./images/github_logo.png",
         "./images/instagram_logo.png",
+        "./images/tictactoe_logo.png",
     ];
     let arrProject = {
         links : arrProjectLinks,

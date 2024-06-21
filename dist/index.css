@@ -50,6 +50,8 @@ body {
 #projectWin:hover {
     overflow: scroll;
     overflow-x: hidden;
+    scrollbar-width: thin;
+    scrollbar-color: goldenrod black;
 }
 
 @keyframes colorChangeProjCard {
