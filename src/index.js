@@ -14,8 +14,9 @@ document.addEventListener("DOMContentLoaded", ()=> {
         "https://instagram.com",
         "https://ferinsh.github.io/tictactoe/",
         "https://ferinsh.github.io/project-game-rps/",
+        "https://https://ferinsh.github.io/project-todo-list/",
     ];
-    let arrProjectNames = ["Weather App", "Youtube", "Google", "Github", "Instagram", "Tic Tac Toe", "Rock Paper Scissors"];
+    let arrProjectNames = ["Weather App", "Youtube", "Google", "Github", "Instagram", "Tic Tac Toe", "Rock Paper Scissors", "ToDo List"];
     let arrProjImgSrc = [
         "./images/weatherapp_logo.png",
         "./images/youtube_logo.png",
@@ -24,6 +25,7 @@ document.addEventListener("DOMContentLoaded", ()=> {
         "./images/instagram_logo.png",
         "./images/tictactoe_logo.png",
         "./images/rockpaperscissors_logo.png",
+        "./images/todolist_logo.png",
     ];
     let arrProject = {
         links : arrProjectLinks,
