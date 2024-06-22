@@ -45,7 +45,10 @@ body {
     justify-content: space-around;
     /* border: 3px solid rgba(218, 165, 32, 0.5); */
     overflow: hidden;
-    /* box-shadow: 0px 0px 10px rgba(218, 165, 32, 0.5); */
+    /* box-shadow: 0px 8px 4px -4px rgba(218, 165, 32, 1); */
+    border: 2px solid rgba(218, 165, 32, 0.5);
+    /* padding: 10px; */
+    /* border-radius: 10px; */
 }
 
 #projectWin:hover {
@@ -53,6 +56,7 @@ body {
     overflow-x: hidden;
     scrollbar-width: thin;
     scrollbar-color: goldenrod black;
+    
 }
 
 @keyframes colorChangeProjCard {
@@ -81,33 +85,33 @@ body {
 
     }
     100% {
-        height: 75%;
+        height: 85%;
     }
 }
 
 
 .projectCard {
-    height: 75%;
+    height: 70%;
     width: 30%;
-    background: goldenrod;
-    margin: 1%;
-    animation: colorChangeProjCard 1s forwards;
+    /* background: goldenrod; */
+    /* margin: 1%; */
+    /* animation: colorChangeProjCard 1s forwards; */
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.projectCard:hover {
+/* .projectCard:hover {
     animation: colorChangeProjCard 1s reverse;
-}
+} */
 
 .projectCard:hover img{
-    animation: projCardImgScale 1s forwards;
+    animation: projCardImgScale 90ms forwards;
     cursor: pointer;
 }
 
 .projectCard img{
-    height: 50%;
+    height: 75%;
     object-fit: contain;
 }
 
@@ -139,9 +143,16 @@ body {
 @media (max-width: 768px) {
     .homepage header {
         height: 15%;
-        background: white;
+        
+        /* background: white; */
     }
 
+    #projectwin {
+        overflow: scroll;
+        overflow-x: hidden;
+        scrollbar-width: thin;
+        scrollbar-color: goldenrod black; 
+    }
     .projectCard {
         width: 45%;
     }

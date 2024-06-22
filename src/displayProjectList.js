@@ -16,13 +16,15 @@ export default function displayProjectList(projList){
         projectCardHolder.addEventListener('click', () => {
             window.open(projList[i].link, "");
         })
-
+        
+        // 
+        // 
         // tries to add a right click menu of url to the divs - FAILURE
-        projectCardHolder.addEventListener('contextmenu', function(event) {
-            event.preventDefault(); // Prevent default context menu
-            window.location.href = projList[i].link; // Navigate to the URL from projList[i].link
-            return false; // Ensure propagation is stopped
-        });
+        // projectCardHolder.addEventListener('contextmenu', function(event) {
+        //     event.preventDefault(); // Prevent default context menu
+        //     window.location.href = projList[i].link; // Navigate to the URL from projList[i].link
+        //     return false; // Ensure propagation is stopped
+        // });
         
         //adds images to the projects - MUST CONVERT TO ASYNC
         // let projLogo = document.createElement("img");
