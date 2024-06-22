@@ -140,7 +140,7 @@ body {
 }
 
 
-@media (max-width: 600px) {
+@media (max-width: 780px) {
     .homepage header {
         height: 15%;
         
