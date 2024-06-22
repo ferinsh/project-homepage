@@ -127,7 +127,14 @@ body {
     display: flex;
     justify-content: center;
     /* align-items: center; */
+    overflow: hidden;
+}
+
+#siteDesc:hover {
     overflow: scroll;
+    overflow-x: hidden;
+    scrollbar-width: thin;
+    scrollbar-color: goldenrod black;
 }
 
 #siteDesc para {
@@ -181,6 +188,6 @@ body {
 
     #siteDesc para {
         max-width: 90%;
-        
+        -webkit-overflow-scrolling: touch;
     }
 }
