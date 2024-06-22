@@ -126,7 +126,8 @@ body {
     background: #000000;
     display: flex;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
+    overflow: scroll;
 }
 
 #siteDesc para {
@@ -174,10 +175,12 @@ body {
     }
 
     #siteDesc {
-        max-height: 80%;
+        height: 80%;
+
     }
 
     #siteDesc para {
         max-width: 90%;
+        
     }
 }
