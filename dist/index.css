@@ -151,7 +151,8 @@ body {
         overflow: scroll;
         overflow-x: hidden;
         scrollbar-width: thin;
-        scrollbar-color: goldenrod black; 
+        scrollbar-color: goldenrod black;
+        -webkit-overflow-scrolling: touch;
     }
     .projectCard {
         width: 45%;
