@@ -140,22 +140,35 @@ body {
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
     .homepage header {
         height: 15%;
         
         /* background: white; */
     }
 
-    #projectwin {
+    /* #projectwin {
         overflow: scroll;
         overflow-x: hidden;
         scrollbar-width: thin;
         scrollbar-color: goldenrod black;
         -webkit-overflow-scrolling: touch;
+        padding: 0%;
+    } */
+    
+    #projectWin:hover, #projectWin:active {
+        overflow: scroll;
+        -webkit-overflow-scrolling: touch;
     }
+    
     .projectCard {
-        width: 45%;
+        width: 35%;
+        height: 35%;
+    }
+
+    .projectCard img{
+        height: auto;
+        width: 75%;
     }
 
     #siteDesc {
